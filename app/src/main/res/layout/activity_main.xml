@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.frybynite.magicdress.MainActivity">
+
+    <TextView
+        android:id="@+id/wandStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/startButton"
+        android:text="Status"
+        android:visibility="gone" />
+
+    <Button
+        android:text="Start Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/startButton"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Stop Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopButton"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignBaseline="@+id/startButton"
+        android:layout_alignBottom="@+id/startButton"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/stopButton"
+        android:text="Wand:"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dressStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_alignBaseline="@+id/startButton"
+        android:layout_alignBottom="@+id/startButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="13dp"
+        android:text="Wand Actions"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/wandActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/stopButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:text="Wand Actions"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="rainbow"
+        android:text="Rainbow"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="whiteSlide"
+        android:text="White Slide"
+        android:layout_below="@+id/button6"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="lightning"
+        android:text="Lightning"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="dark"
+        android:text="Dark"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:onClick="shimmer"
+        android:text="Shimmer"
+        android:layout_below="@+id/startButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:onClick="twinkle"
+        android:text="Twinkle" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:onClick="twinkleLight"
+        android:text="Twinkle Light" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="twinkle"
+        android:text="Unused"
+        android:layout_below="@+id/button9"
+        android:layout_alignStart="@+id/button9" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/button7"
+        android:layout_below="@+id/button7"
+        android:onClick="twinkle"
+        android:text="Unused" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Messages"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentEnd="true"
+        android:scrollbars = "vertical"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    tools:context="com.frybynite.magicdress.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_weight="2"
+            android:text="Start Service" />
+
+        <TextView
+            android:id="@+id/dressStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Stop Service" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ToggleButton
+            android:id="@+id/shimmerButton"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="shimmer"
+            android:textOff="Shimmer"
+            android:textOn="Shimmer"
+            android:textSize="13sp" />
+
+        <ToggleButton
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:onClick="twinkle"
+            android:textOff="Twinkle"
+            android:textOn="Twinkle"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:onClick="twinkleLight"
+            android:textOff="Twinkle Light"
+            android:textOn="Twinkle Light"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="White Slide"
+            android:textOn="White Slide"
+            android:onClick="whiteSlide"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/button6"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="lightning"
+            android:textOff="Lightning"
+            android:textOn="Lightning"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/button"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Rainbow Pulse"
+            android:textOn="Rainbow Pulse"
+            android:onClick="rainbowPulse" />
+
+        <ToggleButton
+            android:id="@+id/button8"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Rainbow"
+            android:textOn="Rainbow"
+            android:onClick="rainbow" />
+
+        <ToggleButton
+            android:id="@+id/button9"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Maize 'n Blue"
+            android:textOn="Maize 'n Blue"
+            android:onClick="maizeAndBlue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ToggleButton
+            android:id="@+id/button5"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Dark"
+            android:textOn="Dark"
+            android:onClick="dark" />
+
+        <ToggleButton
+            android:id="@+id/button13"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="Pulse"
+            android:textOff="Pulse"
+            android:onClick="pulseAll" />
+
+        <ToggleButton
+            android:id="@+id/button11"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="Pulse Left"
+            android:textOff="Pulse Left"
+            android:onClick="pulseLeft" />
+
+        <ToggleButton
+            android:id="@+id/button12"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOn="Pulse Right"
+            android:textOff="Pulse Right"
+            android:onClick="pulseRight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ToggleButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="mostlyWhite"
+            android:textOff="Mostly White"
+            android:textOn="Mostly White" />
+
+        <ToggleButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Unused"
+            android:textOn="Unused"
+            />
+
+        <ToggleButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="twinkle"
+            android:textOff="Unused"
+            android:textOn="Unused"
+            />
+
+        <ToggleButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="twinkle"
+            android:textOff="Unused"
+            android:textOn="Unused"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:scrollbars = "vertical"
+        />
+
+
+</LinearLayout>
