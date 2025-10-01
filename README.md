@@ -1,4 +1,4 @@
-# MagicDress
+# Magic Dress Android App
 
 MagicDress is an Android application that controls interactive LED wearables through Bluetooth Low Energy (BLE). The app allows users to control both a "magic wand" and a "magic dress" with various lighting effects and animations.
 
@@ -127,3 +127,4 @@ The app requires the following permissions:
 
 
 This project is available under the standard terms. Please check with the repository owner for licensing details.
+
