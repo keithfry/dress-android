@@ -4,6 +4,8 @@ MagicDress is an Android application that controls interactive LED wearables thr
 
 This app works with the [Magic Dress Controller](https://github.com/keithfry/dress-controller) firmware.
 
+[Promo Video](https://www.youtube.com/shorts/uh0L_6e-L_s)
+
 > [!NOTE] 
 > The wand controls were never completely finished and may not function as intended. The dress controls are the primary functional component of this application.
 
